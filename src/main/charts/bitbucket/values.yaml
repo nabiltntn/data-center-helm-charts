@@ -985,3 +985,10 @@ additionalFiles: []
 #    type: secret
 #    key: keystore.jks
 #    mountPath: /var/ssl
+
+# -- Helm tests configuration
+#
+helmTests:
+  # -- Set to 'true' if the helm tests templates should be included
+  #
+  enabled: true

@@ -1,4 +1,4 @@
-{{ if .Values.database.credentials.secretName }}
+{{- if and .Values.database.credentials.secretName .Values.bitbucket.helmTests.enabled -}}
 apiVersion: v1
 kind: Pod
 metadata:

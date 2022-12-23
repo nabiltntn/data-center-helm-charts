@@ -94,6 +94,7 @@ Kubernetes: `>=1.21.x-0`
 | fluentd.fluentdCustomConfig | object | `{}` | Custom fluent.conf file  |
 | fluentd.imageRepo | string | `"fluent/fluentd-kubernetes-daemonset"` | The Fluentd sidecar image repository  |
 | fluentd.imageTag | string | `"v1.11.5-debian-elasticsearch7-1.2"` | The Fluentd sidecar image tag  |
+| helmTests.enabled | bool | `true` | Includes Helm tests pods templates  |
 | image | object | `{"pullPolicy":"IfNotPresent","repository":"atlassian/bitbucket","tag":""}` | Image configuration  |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy  |
 | image.repository | string | `"atlassian/bitbucket"` | The Confluence Docker image to use https://hub.docker.com/r/atlassian/bitbucket-server  |
